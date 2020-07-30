@@ -9,15 +9,16 @@
   </div>
 </template>
 <script lang="ts">
-import { inject, Ref } from "vue";
+import {inject, Ref} from "vue";
+
 export default {
   setup() {
     const asideVisible = inject<Ref<boolean>>("asideVisible"); // get
     const toggleAside = () => {
       asideVisible.value = !asideVisible.value;
     };
-    return { toggleAside };
-  },
+    return {toggleAside};
+  }
 };
 </script>
 <style lang="scss" scoped>
