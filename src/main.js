@@ -1,9 +1,9 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import './index.css'
+import './index.scss'
 import { createWebHashHistory, createRouter } from 'vue-router'
-import Home from './components/Home.vue'
-import Doc from './components/Doc.vue'
+import Home from './views/Home.vue'
+import Doc from './views/Doc.vue'
 
 const histroy = createWebHashHistory()
 const router = createRouter({
@@ -13,5 +13,7 @@ const router = createRouter({
 	{ path: '/doc', component: Doc },
   ]
 })
-
+router.afterEach(() => {
+  console.log('路由切换了')
+})
 createApp(App).mount('#app')
