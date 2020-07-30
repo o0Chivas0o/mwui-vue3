@@ -3,7 +3,6 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 import Switch from './components/Switch'
 
 export default {
