@@ -5,18 +5,18 @@
       <li>菜单1</li>
       <li>菜单2</li>
     </ul>
-    <span class="toggleAside" @click="toggleMenu"></span>
+    <span class="toggleAside" @click="toggleAside"></span>
   </div>
 </template>
 <script lang="ts">
 import { inject, Ref } from "vue";
 export default {
   setup() {
-    const menuVisible = inject<Ref<boolean>>("menuVisible"); // get
-    const toggleMenu = () => {
-      menuVisible.value = !menuVisible.value;
+    const asideVisible = inject<Ref<boolean>>("asideVisible"); // get
+    const toggleAside = () => {
+      asideVisible.value = !asideVisible.value;
     };
-    return { toggleMenu };
+    return { toggleAside };
   },
 };
 </script>
