@@ -1,8 +1,8 @@
 <template>
   <div>
-    <Topnav />
+    <Topnav/>
     <div class="banner">
-      <h1>轱辘UI</h1>
+      <h1>MWUI</h1>
       <h2>一个厉害的 UI 框架</h2>
       <p class="actions">
         <a href="https://github.com">GitHub</a>
@@ -13,8 +13,9 @@
 </template>
 <script lang="ts">
 import Topnav from "../components/Topnav.vue";
+
 export default {
-  components: { Topnav },
+  components: {Topnav}
 };
 </script>
 <style lang="scss" scoped>
@@ -25,10 +26,10 @@ export default {
   align-items: center;
   flex-direction: column;
   background: lightgreen;
-  > .actions{
+  > .actions {
     padding: 8px 0;
     a {
-      margin:0 8px;
+      margin: 0 8px;
       background: #fff;
       display: inline-block;
       $h: 28px;
