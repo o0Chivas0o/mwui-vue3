@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import { ref } from '@vue/reactivity'
+import { ref } from 'vue'
 
 export default {
   name: 'Switch',
@@ -13,7 +13,6 @@ export default {
     const checked = ref(false)
     const toggle = () => {
       checked.value = !checked.value
-      console.log(checked)
     }
     return { checked, toggle }
   }
