@@ -35,13 +35,13 @@
     </p>
   </div>
   <h1>示例4</h1>
-  <div class="tip">disable属性(boolean)，可选值:false、true，默认不填为false</div>
+  <div class="tip">disable属性(值为boolean)，可选值:false、true，默认不填为false</div>
   <div>
     <Button>:disabled:false</Button>
     <Button :disabled="true">:disabled:true</Button>
   </div>
   <h1>示例5</h1>
-  <div class="tip">loading属性(boolean)，可选值:false、true，默认不填为false</div>
+  <div class="tip">loading属性(值为boolean)，可选值:false、true，默认不填为false</div>
   <div>
     <Button>:loading:false</Button>
     <Button :loading="true">:loading:true</Button>
