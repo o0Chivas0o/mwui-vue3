@@ -8,7 +8,7 @@
 import { ref } from 'vue'
 
 export default {
-  name: 'Switch',
+  name: 'MWSwitch',
   props: {
     value: Boolean
   },

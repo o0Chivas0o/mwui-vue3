@@ -2,16 +2,21 @@
   <div>Button组件</div>
   <h1>示例1</h1>
   <div>
-    <Button>你好</Button>
+    <Button @click="onClick" @focus="onClick" @mouseover="onClick" size="small">你好</Button>
   </div>
 </template>
 
 <script>
-import Button from '../lib/button.vue'
+import Button from '../lib/Button.vue'
 
 export default {
-  name: 'Button',
-  components: { Button }
+  components: { Button },
+  setup() {
+    const onClick = () => {
+      console.log('hi')
+    }
+    return { onClick }
+  }
 }
 </script>
 
